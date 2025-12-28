@@ -89,7 +89,7 @@ export function HeroSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.5 }}
+            transition={{ delay: 0, duration: 0.3 }}
             className="h-12 flex items-center justify-center mb-10"
           >
             <span className="text-2xl md:text-3xl font-display font-semibold text-primary">
