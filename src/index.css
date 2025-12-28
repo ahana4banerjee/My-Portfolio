@@ -176,3 +176,14 @@
   background-size: 200% 200%;
   animation: gradient-shift 8s ease infinite;
 }
+
+.highlight-glow {
+  text-shadow:
+    0 0 6px rgba(124, 58, 237, 0.35),
+    0 0 12px rgba(124, 58, 237, 0.15);
+}
+.highlight-glow:hover {
+  text-shadow:
+    0 0 8px rgba(124, 58, 237, 0.45),
+    0 0 16px rgba(124, 58, 237, 0.25);
+}

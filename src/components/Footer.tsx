@@ -9,9 +9,9 @@ const quickLinks = [
 ];
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:hello@johndoe.com", label: "Email" },
+  { icon: Github, href: "https://github.com/ahana4banerjee", label: "GitHub" },
+  { icon: Linkedin, href: "https://linkedin.com/in/ahana-4-banerjee", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:banerjeeahana4@gmail.com", label: "Email" },
 ];
 
 export function Footer() {
@@ -36,7 +36,7 @@ export function Footer() {
               }}
               className="font-display text-2xl font-bold text-gradient"
             >
-              John Doe
+              Ahana Banerjee
             </a>
             <p className="mt-3 text-muted-foreground text-sm max-w-xs">
               Full Stack Developer passionate about creating beautiful, functional, and user-friendly applications.
@@ -87,7 +87,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            © {new Date().getFullYear()} John Doe. Made with
+            © {new Date().getFullYear()} Ahana Banerjee. Made with
             <Heart className="h-4 w-4 text-red-500 fill-red-500" />
           </p>
           <p className="text-sm text-muted-foreground">

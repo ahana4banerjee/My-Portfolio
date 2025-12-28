@@ -37,15 +37,15 @@ export function ContactSection() {
     try {
       // Replace these with your EmailJS credentials
       await emailjs.send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        "service_vcpasz6", // Replace with your EmailJS service ID
+        "template_8fvwad8", // Replace with your EmailJS template ID
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_email: "your@email.com", // Replace with your email
+          to_email: "banerjeeahana4@gmail.com", // Replace with your email
         },
-        "YOUR_PUBLIC_KEY" // Replace with your EmailJS public key
+        "eBjqd-45q57bveL3O" // Replace with your EmailJS public key
       );
 
       toast({
@@ -69,19 +69,19 @@ export function ContactSection() {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@johndoe.com",
-      href: "mailto:hello@johndoe.com",
+      value: "banerjeeahana4@gmail.com",
+      href: "mailto:banerjeeahana4@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+91 86885 57144",
+      href: "tel:+91 8688557144",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Hyderabad, India",
       href: null,
     },
   ];
@@ -101,7 +101,7 @@ export function ContactSection() {
             Get in <span className="text-gradient">Touch</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Have a project in mind or just want to say hello? I'd love to hear from you!
+            Interested in collaborating or hiring? Feel free to reach out! I’m always open to meaningful opportunities.
           </p>
         </motion.div>
 
@@ -232,7 +232,7 @@ export function ContactSection() {
             >
               <p className="text-muted-foreground mb-2">Currently available for</p>
               <p className="font-display text-xl font-semibold text-gradient">
-                Freelance Projects & Full-time Opportunities
+                Freelance Projects & Internship Opportunities
               </p>
             </motion.div>
           </motion.div>

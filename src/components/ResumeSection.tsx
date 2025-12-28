@@ -12,8 +12,8 @@ export function ResumeSection() {
     // Create a sample resume PDF download
     // In production, replace with actual resume URL
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
-    link.download = "John_Doe_Resume.pdf";
+    link.href = "public/assets/Full Stack Developer Resume.pdf";
+    link.download = "Full Stack Developer Resume.pdf";
     link.click();
   };
 
@@ -58,13 +58,13 @@ export function ResumeSection() {
                 {/* Content */}
                 <div className="flex-1 text-center md:text-left">
                   <h3 className="font-display text-2xl font-semibold mb-2">
-                    John Doe
+                    Ahana Banerjee
                   </h3>
                   <p className="text-primary font-medium mb-4">
-                    Full Stack Developer
+                    Full Stack Developer | Software Engineer
                   </p>
                   <p className="text-muted-foreground mb-6">
-                    5+ years of experience building scalable web applications and leading development teams.
+                    Actively building scalable web applications and contributing to open source projects.
                   </p>
 
                   <div className="flex flex-col sm:flex-row gap-3">
@@ -78,7 +78,7 @@ export function ResumeSection() {
                     <Button
                       variant="outline"
                       className="rounded-full px-6 border-primary/50 hover:bg-primary/10 transition-all duration-300"
-                      onClick={() => window.open("/resume.pdf", "_blank")}
+                      onClick={() => window.open("public/assets/Full Stack Developer Resume.pdf", "_blank")}
                     >
                       <Eye className="h-4 w-4 mr-2" />
                       View Online
@@ -90,16 +90,16 @@ export function ResumeSection() {
               {/* Quick Stats */}
               <div className="grid grid-cols-3 gap-4 mt-10 pt-8 border-t border-border/50">
                 <div className="text-center">
-                  <div className="font-display text-3xl font-bold text-gradient">5+</div>
-                  <div className="text-sm text-muted-foreground">Years Exp.</div>
+                  <div className="font-display text-3xl font-bold text-gradient">3+</div>
+                  <div className="text-sm text-muted-foreground">Production-grade Apps</div>
                 </div>
                 <div className="text-center">
                   <div className="font-display text-3xl font-bold text-gradient">50+</div>
-                  <div className="text-sm text-muted-foreground">Projects</div>
+                  <div className="text-sm text-muted-foreground">GitHub Commits</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-display text-3xl font-bold text-gradient">20+</div>
-                  <div className="text-sm text-muted-foreground">Clients</div>
+                  <div className="font-display text-3xl font-bold text-gradient">50+</div>
+                  <div className="text-sm text-muted-foreground">DSA Problems Solved</div>
                 </div>
               </div>
             </CardContent>

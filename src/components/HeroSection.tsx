@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 const roles = [
   "Full Stack Developer",
   "Frontend Developer",
+  "Backend Developer",
   "Software Developer",
   "Problem Solver",
 ];
@@ -71,24 +72,24 @@ export function HeroSection() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-4"
           >
-            <span className="text-gradient">John Doe</span>
+            <span className="text-gradient">Ahana Banerjee</span>
           </motion.h1>
 
           {/* Headline */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.8 }}
             className="text-xl md:text-2xl text-muted-foreground mb-6"
           >
-            Crafting Digital Experiences with Code & Creativity
+            ECE Student | AI-Powered Full-Stack Developer | Open-Source Contributor
           </motion.p>
 
           {/* Animated Role Carousel */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.5 }}
             className="h-12 flex items-center justify-center mb-10"
           >
             <span className="text-2xl md:text-3xl font-display font-semibold text-primary">
@@ -101,7 +102,7 @@ export function HeroSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.8 }}
             className="flex flex-wrap items-center justify-center gap-4 mb-12"
           >
             <Button
@@ -125,11 +126,11 @@ export function HeroSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.8 }}
             className="flex items-center justify-center gap-4"
           >
             <a
-              href="https://github.com"
+              href="https://github.com/ahana4banerjee"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full glass hover:glow-sm hover:scale-110 transition-all duration-300"
@@ -137,7 +138,7 @@ export function HeroSection() {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/ahana-4-banerjee"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full glass hover:glow-sm hover:scale-110 transition-all duration-300"
@@ -145,7 +146,7 @@ export function HeroSection() {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:banerjeeahana4@example.com"
               className="p-3 rounded-full glass hover:glow-sm hover:scale-110 transition-all duration-300"
             >
               <Mail className="h-5 w-5" />
