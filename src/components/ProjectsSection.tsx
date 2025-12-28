@@ -8,7 +8,7 @@ const projects = [
   {
     title: "FinLens - AI Finance Tracker SaaS App",
     description: "A full-stack AI-driven personal finance platform that automates expense tracking, receipt processing, and financial insight generation using Google Gemini AI.",
-    image: "public/assets/FinLens Landing Page.jpeg",
+    image: "/assets/FinLens%20Landing%20Page.jpeg",
     tags: ["MERN", "TypeScript", "Gemini AI", "ChartsJS"],
     liveUrl: "https://fin-lens-sooty.vercel.app/",
     githubUrl: "https://github.com/ahana4banerjee/FinLens",
@@ -16,7 +16,7 @@ const projects = [
   {
     title: "CareerLyze - AI Career Coach SaaS App",
     description: "AI career guidance platform that helps users explore career paths, build optimized resumes, generate tailored cover letters, and prepare for interviews using Gemini AI.",
-    image: "public/assets/CareerLyze Landing Page.jpeg",
+    image: "/assets/CareerLyze%20Landing%20Page.jpeg",
     tags: ["Next.js", "NeonDB", "Prisma", "Inngest"],
     liveUrl: "https://career-lyze.vercel.app/",
     githubUrl: "https://github.com/ahana4banerjee/CareerLyze",
@@ -24,7 +24,7 @@ const projects = [
   {
     title: "Job Portal",
     description: "Built with the MERN stack; enables job seekers to discover and apply for jobs and recruiters to post, manage, and track applications through role-based dashboards.",
-    image: "public/assets/Job Portal Landing page.PNG",
+    image: "/assets/Job%20Portal%20Landing%20page.PNG",
     tags: ["MERN", "ShadcnUI", "Cloudinary", "Multer"],
     liveUrl: "https://job-portal-sable-eight.vercel.app/",
     githubUrl: "https://github.com/ahana4banerjee/JobPortal",
