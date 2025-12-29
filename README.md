@@ -1,73 +1,91 @@
-# Welcome to your Lovable project
+# Ahana Banerjee • Personal Portfolio  
+**Live Demo:** https://portfolio-kappa-eight-xcqggrzvok.vercel.app/
 
-## Project info
+A modern, responsive developer portfolio showcasing projects, skills, contact info, and resume, built to highlight technical experience and personal branding.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## What It Contains
 
-There are several ways of editing your application.
+This portfolio is structured to present your developer journey clearly and professionally:
 
-**Use Lovable**
+### Sections
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+#### **Home**
+- Hero introduction with animated highlights
+- Brief tagline and role
+- Quick links to contact or resume
 
-Changes made via Lovable will be committed automatically to this repo.
+#### **About**
+- Personal introduction with soft keyword highlight effects
+- Brief description of background and motivations
+- Dynamic skill badges
 
-**Use your preferred IDE**
+#### **Projects**
+- Grid/gallery of featured projects
+- Each project includes:
+  - Image (with hover transition)
+  - Title & description
+  - Tech stack preview
+  - Live demo and GitHub links
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+#### **Resume**
+- A downloadable PDF link
+- Quick snapshot card with details
+- Professional title & brief summary
+- Impactful experience stats
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+#### **Contact**
+- Inviting message tailored to hiring
+- Simple contact form using EmailJS
+- Email and social icons
 
-Follow these steps:
+#### **Footer**
+- Theme toggle (light/dark)
+- Copyright & quick anchors
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Tech Stack
 
-# Step 3: Install the necessary dependencies.
-npm i
+This portfolio is built with modern frontend tooling:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+| Category | Technologies |
+|----------|--------------|
+| Framework | **React (Vite)** |
+| Styling | **Tailwind CSS** |
+| Animations | **Framer Motion** |
+| Contact form | **EmailJS** |
+| Deployment | **Vercel** |
+| Hosting | Static SPA |
+| Icons | React Icons |
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Features
 
-**Use GitHub Codespaces**
+- Lightweight and fast SPA
+- Fully responsive layout
+- Smooth scroll & motion animations
+- Soft highlight effects for keywords
+- Dynamic project rendering
+- Dark/Light theme toggle
+- SEO friendly titles & meta
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## Author
 
-This project is built with:
+**Ahana Banerjee**  
+Full Stack Developer | Software Engineer  
+- 🔗 GitHub: https://github.com/ahana4banerjee  
+- 🔗 LinkedIn: https://linkedin.com/in/ahana-4-banerjee  
+- Email: *banerjeeahana4@gmail.com.com*
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## License
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Distributed under the MIT License.  
+Feel free to use this portfolio template with credit.
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
