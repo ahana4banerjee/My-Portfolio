@@ -1,5 +1,5 @@
 # Ahana Banerjee • Personal Portfolio  
-**Live Demo:** https://portfolio-kappa-eight-xcqggrzvok.vercel.app/
+**Live Demo:** https://ahanabanerjeeportfolio.vercel.app/
 
 A modern, responsive developer portfolio showcasing projects, skills, contact info, and resume, built to highlight technical experience and personal branding.
 
