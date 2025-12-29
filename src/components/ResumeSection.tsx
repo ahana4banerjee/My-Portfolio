@@ -64,7 +64,7 @@ export function ResumeSection() {
                     Full Stack Developer | Software Engineer
                   </p>
                   <p className="text-muted-foreground mb-6">
-                    Actively building scalable web applications and contributing to open source projects.
+                    Focused on building scalable web applications and AI-powered products.
                   </p>
 
                   <div className="flex flex-col sm:flex-row gap-3">
