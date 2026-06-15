@@ -7,7 +7,8 @@ import {
   Music, Camera, GamepadIcon, BookOpen, Plane,
   Laptop,
   Radio,
-  Pen
+  Pen,
+  Cpu
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -15,10 +16,29 @@ import { Badge } from "@/components/ui/badge";
 const skills = [
   // Languages
   { name: "Python", category: "languages", icon: Code2, color: "from-yellow-500 to-orange-500" },
+  { name: "C++", category: "languages", icon: Code2, color: "from-blue-600 to-indigo-600" },
+  { name: "C", category: "languages", icon: Code2, color: "from-gray-500 to-gray-700" },
   { name: "JavaScript", category: "languages", icon: Code2, color: "from-yellow-400 to-yellow-600" },
   { name: "TypeScript", category: "languages", icon: Code2, color: "from-blue-500 to-indigo-500" },
   { name: "SQL", category: "languages", icon: Database, color: "from-sky-500 to-blue-500" },
-  { name: "C", category: "languages", icon: Code2, color: "from-gray-500 to-gray-700" },
+
+  // Embedded & IoT
+  { name: "STM32 / MCU", category: "embedded & IoT", icon: Cpu, color: "from-blue-600 to-cyan-500" },
+  { name: "Microcontroller 8051", category: "embedded & IoT", icon: Cpu, color: "from-indigo-500 to-purple-600" },
+  { name: "Vivado (FPGA)", category: "embedded & IoT", icon: Cpu, color: "from-orange-600 to-red-500" },
+  { name: "Solar Grid Monitoring", category: "embedded & IoT", icon: Cpu, color: "from-amber-500 to-yellow-600" },
+  { name: "I2C / SPI / UART", category: "embedded & IoT", icon: Cpu, color: "from-purple-500 to-indigo-500" },
+  { name: "ESP32 / RTOS", category: "embedded & IoT", icon: Cpu, color: "from-yellow-500 to-amber-600" },
+  { name: "Wireless Sensor Networks", category: "embedded & IoT", icon: Cpu, color: "from-teal-400 to-emerald-600" },
+
+  // AI / ML
+  { name: "TensorFlow / PyTorch", category: "AI", icon: Code2, color: "from-orange-500 to-red-500" },
+  { name: "Hugging Face", category: "AI", icon: Code2, color: "from-yellow-400 to-amber-500" },
+  { name: "Supervised Learning", category: "AI", icon: Code2, color: "from-green-500 to-emerald-600" },
+  { name: "Unsupervised Learning", category: "AI", icon: Code2, color: "from-teal-500 to-cyan-600" },
+  { name: "Google Gemini API", category: "AI", icon: Code2, color: "from-purple-500 to-fuchsia-500" },
+  { name: "NLP Pipelines", category: "AI", icon: Code2, color: "from-violet-500 to-indigo-500" },
+  { name: "Multi-Agent Orchestration", category: "AI", icon: Code2, color: "from-indigo-600 to-blue-600" },
 
   // Frontend
   { name: "React.js", category: "frontend", icon: Code2, color: "from-cyan-500 to-blue-500" },
@@ -41,11 +61,6 @@ const skills = [
   { name: "NeonDB", category: "databases", icon: Database, color: "from-cyan-500 to-blue-500" },
   { name: "Prisma ORM", category: "databases", icon: Database, color: "from-gray-500 to-gray-700" },
 
-  // AI / ML
-  { name: "Google Gemini API", category: "AI", icon: Code2, color: "from-purple-500 to-fuchsia-500" },
-  { name: "NLP Pipelines", category: "AI", icon: Code2, color: "from-violet-500 to-indigo-500" },
-  { name: "Multi-Agent Orchestration", category: "AI", icon: Code2, color: "from-indigo-600 to-blue-600" },
-
   // Cloud & DevOps
   { name: "AWS (EC2, S3)", category: "DevOps & Cloud", icon: Server, color: "from-orange-500 to-yellow-500" },
   { name: "Azure", category: "DevOps & Cloud", icon: Server, color: "from-blue-500 to-indigo-500" },
@@ -54,6 +69,9 @@ const skills = [
   { name: "Render", category: "DevOps & Cloud", icon: Globe, color: "from-indigo-500 to-purple-500" },
 
   // Tools
+  { name: "STM32", category: "tools", icon: Cpu, color: "from-blue-600 to-cyan-500" },
+  { name: "PICSimLab", category: "tools", icon: Cpu, color: "from-yellow-600 to-orange-500" },
+  { name: "Proteus", category: "tools", icon: Cpu, color: "from-blue-500 to-sky-600" },
   { name: "Git", category: "tools", icon: Code2, color: "from-orange-500 to-yellow-500" },
   { name: "GitHub", category: "tools", icon: Code2, color: "from-gray-600 to-gray-800" },
   { name: "Docker", category: "tools", icon: Server, color: "from-sky-500 to-blue-600" },
@@ -91,7 +109,7 @@ const interests = [
 export function AboutSection() {
   const [activeCategory, setActiveCategory] = useState("all");
 
-  const categories = ["all", "languages", "frontend", "backend", "databases", "AI", "DevOps & Cloud", "tools"];
+  const categories = ["all", "languages", "embedded & IoT", "AI", "frontend", "backend", "databases", "DevOps & Cloud", "tools"];
 
 
   const filteredSkills = skills.filter(
