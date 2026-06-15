@@ -105,18 +105,26 @@ export function HeroSection() {
           >
             <Button
               size="lg"
-              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
               className="rounded-full px-8 bg-primary hover:bg-primary/90 hover:glow-sm transition-all duration-300"
             >
-              Get in Touch
+              View Projects
             </Button>
             <Button
               size="lg"
               variant="outline"
-              onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() => document.getElementById("resume")?.scrollIntoView({ behavior: "smooth" })}
               className="rounded-full px-8 border-primary/50 hover:bg-primary/10 transition-all duration-300"
             >
-              View Projects
+              Resume
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              onClick={() => window.open("https://github.com/ahana4banerjee", "_blank")}
+              className="rounded-full px-8 border-primary/50 hover:bg-primary/10 transition-all duration-300"
+            >
+              GitHub
             </Button>
           </motion.div>
 
