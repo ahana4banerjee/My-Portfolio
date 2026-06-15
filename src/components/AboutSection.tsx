@@ -80,23 +80,40 @@ const skills = [
 
 const experiences = [
   {
-    title: "Full Stack Developer Intern",
+    title: "Internet of Things (IoT) Intern",
+    company: "DecodeLabs",
+    period: "Apr 2026 - May 2026",
+    description: "Designed environmental sensing networks in Tinkercad (Arduino, PIR, LDR). Developed a Python data ingestion pipeline, built a Streamlit telemetry monitoring dashboard, and implemented a hierarchical rule-based alert suppression engine.",
+    tags: ["IoT", "Arduino", "Python", "Streamlit", "Automation"]
+  },
+  {
+    title: "Software Developer Intern",
+    company: "SocialMM",
+    period: "Jan 2026 - Apr 2026",
+    description: "Contributed to Zenzhub's Learning Management System (LMS). Structured and implemented core LMS features and scalable components to enhance user interaction, course delivery, and content management workflows.",
+    tags: ["React.js", "LMS Development", "Component Design", "UI/UX"]
+  },
+  {
+    title: "Student Project Associate",
+    company: "Stanley College of Eng. & Tech.",
+    period: "Dec 2025 - Apr 2026",
+    description: "Engineered a smart delay prediction model for Hyderabad Metro systems. Processed GTFS schedule/real-time operational data, engineered features, trained hybrid ML models, and built interactive transit monitoring dashboards.",
+    tags: ["Machine Learning", "GTFS Data", "Python", "Transit Analytics"]
+  },
+  {
+    title: "Web Development Intern",
     company: "Zidio Development",
     period: "Aug 2025 - Dec 2025",
-    description: "Built backend pipelines for Excel analytics platform processing .xls/.xlsx files with 10k+ rows using SheetJS & MongoDB.",
+    description: "Built a MERN-based Excel Analytics Platform with 2D/3D visualizations (Chart.js, Three.js) and Gemini API insights. Implemented file parsing pipelines (Multer, SheetJS) and a rich-text blogging system.",
+    tags: ["MERN Stack", "Three.js", "Gemini API", "SheetJS", "Node.js"]
   },
   {
-    title: "Web Developer Intern",
-    company: "Cognifyz Technologies",
-    period: "Apr 2025 - May 2025",
-    description: "Developed responsive web interfaces and improved user experience across projects.",
-  },
-  {
-    title: "Open Source Contributor",
-    company: "GirlScript Summer of Code GsSOC 2025",
-    period: "Jul 2025 - Dec 2025",
-    description: "Delivered 15+ merged PRs across MERN & agentic-AI projects.",
-  },
+    title: "Open Source Contributor & Project Admin",
+    company: "GirlScript Summer of Code (GsSOC)",
+    period: "2025 & 2026",
+    description: "Delivered 15+ merged pull requests across agentic AI and MERN projects in 2025. In 2026, served as Project Admin and Mentor, managing the 'CareerLyze' project and guiding students in open-source contributions.",
+    tags: ["Project Administration", "Mentorship", "MERN Stack", "Git / GitHub"]
+  }
 ];
 
 const interests = [
@@ -250,7 +267,14 @@ export function AboutSection() {
                       <span className="flex items-center gap-1">
                       </span>
                     </div>
-                    <p className="text-muted-foreground">{exp.description}</p>
+                    <p className="text-muted-foreground mb-4">{exp.description}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {exp.tags.map((tag) => (
+                        <Badge key={tag} variant="secondary" className="text-xs font-normal">
+                          {tag}
+                        </Badge>
+                      ))}
+                    </div>
                   </CardContent>
                 </Card>
               </motion.div>
