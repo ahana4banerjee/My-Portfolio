@@ -4,11 +4,9 @@ import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const roles = [
-  "Full Stack Developer",
-  "Frontend Developer",
-  "Backend Developer",
-  "Software Developer",
-  "Problem Solver",
+  "Software + Embedded Systems Engineer",
+  "AI & IoT Engineer",
+  "Building Intelligent Backend Systems",
 ];
 
 export function HeroSection() {
@@ -75,28 +73,28 @@ export function HeroSection() {
             <span className="text-gradient">Ahana Banerjee</span>
           </motion.h1>
 
-          {/* Headline */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.8 }}
-            className="text-xl md:text-2xl text-muted-foreground mb-6"
-          >
-            ECE Student | AI-Powered Full-Stack Developer | Open-Source Contributor
-          </motion.p>
-
-          {/* Animated Role Carousel */}
+          {/* Animated Role Carousel (One-line Title) */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0, duration: 0.3 }}
-            className="h-12 flex items-center justify-center mb-10"
+            className="h-16 flex items-center justify-center mb-6"
           >
-            <span className="text-2xl md:text-3xl font-display font-semibold text-primary">
+            <span className="text-2xl md:text-3xl lg:text-4xl font-display font-semibold text-primary">
               {displayText}
               <span className="animate-pulse">|</span>
             </span>
           </motion.div>
+
+          {/* Short Description */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.8 }}
+            className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
+          >
+            Building intelligent systems by combining AI, IoT, Embedded Systems and Full Stack Development.
+          </motion.p>
 
           {/* CTA Buttons */}
           <motion.div
