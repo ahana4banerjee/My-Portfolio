@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { Send, Mail, MapPin, Phone, Loader2 } from "lucide-react";
+import { Send, Mail, Loader2, Github, Linkedin, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -71,18 +71,28 @@ export function ContactSection() {
       label: "Email",
       value: "banerjeeahana4@gmail.com",
       href: "mailto:banerjeeahana4@gmail.com",
+      isInternal: false,
     },
     {
-      icon: Phone,
-      label: "Phone",
-      value: "+91 86885 57144",
-      href: "tel:+91 8688557144",
+      icon: Linkedin,
+      label: "LinkedIn",
+      value: "ahana-4-banerjee",
+      href: "https://linkedin.com/in/ahana-4-banerjee",
+      isInternal: false,
     },
     {
-      icon: MapPin,
-      label: "Location",
-      value: "Hyderabad, India",
-      href: null,
+      icon: Github,
+      label: "GitHub",
+      value: "ahana4banerjee",
+      href: "https://github.com/ahana4banerjee",
+      isInternal: false,
+    },
+    {
+      icon: FileText,
+      label: "Resume",
+      value: "View Timeline / Download PDF",
+      href: "#resume",
+      isInternal: true,
     },
   ];
 
@@ -91,6 +101,7 @@ export function ContactSection() {
       <div className="absolute inset-0 gradient-bg opacity-30" />
 
       <div className="container mx-auto px-4 relative z-10">
+        {/* Contact Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -100,8 +111,8 @@ export function ContactSection() {
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
             Get in <span className="text-gradient">Touch</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Interested in collaborating or hiring? Feel free to reach out! I’m always open to meaningful opportunities.
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
+            I am actively seeking opportunities where physical hardware, scalable software, and machine learning converge. Let's discuss collaborations in Embedded Systems, IoT, AI/ML, or Full Stack Engineering.
           </p>
         </motion.div>
 
@@ -134,7 +145,7 @@ export function ContactSection() {
                       id="email"
                       name="email"
                       type="email"
-                      placeholder="your@email.com"
+                      placeholder="yourmail@email.com"
                       value={formData.email}
                       onChange={handleChange}
                       required
@@ -193,46 +204,42 @@ export function ContactSection() {
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.4 + index * 0.1 }}
                 >
-                  {info.href ? (
-                    <a
-                      href={info.href}
-                      className="flex items-center gap-4 p-4 rounded-xl glass hover:glow-sm transition-all duration-300 group"
-                    >
-                      <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                        <info.icon className="h-6 w-6 text-primary" />
-                      </div>
-                      <div>
-                        <p className="text-sm text-muted-foreground">{info.label}</p>
-                        <p className="font-medium group-hover:text-primary transition-colors">
-                          {info.value}
-                        </p>
-                      </div>
-                    </a>
-                  ) : (
-                    <div className="flex items-center gap-4 p-4 rounded-xl glass">
-                      <div className="p-3 rounded-full bg-primary/10">
-                        <info.icon className="h-6 w-6 text-primary" />
-                      </div>
-                      <div>
-                        <p className="text-sm text-muted-foreground">{info.label}</p>
-                        <p className="font-medium">{info.value}</p>
-                      </div>
+                  <a
+                    href={info.href}
+                    target={info.href.startsWith("mailto:") || info.isInternal ? undefined : "_blank"}
+                    rel={info.href.startsWith("mailto:") || info.isInternal ? undefined : "noopener noreferrer"}
+                    onClick={(e) => {
+                      if (info.isInternal) {
+                        e.preventDefault();
+                        document.getElementById("resume")?.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }}
+                    className="flex items-center gap-4 p-4 rounded-xl glass hover:glow-sm transition-all duration-300 group w-full text-left"
+                  >
+                    <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                      <info.icon className="h-6 w-6 text-primary" />
                     </div>
-                  )}
+                    <div>
+                      <p className="text-sm text-muted-foreground">{info.label}</p>
+                      <p className="font-medium group-hover:text-primary transition-colors">
+                        {info.value}
+                      </p>
+                    </div>
+                  </a>
                 </motion.div>
               ))}
             </div>
 
-            {/* Map or decorative element */}
+            {/* Availability Detail Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.7 }}
-              className="mt-8 p-6 rounded-xl glass text-center"
+              className="mt-8 p-6 rounded-xl glass text-center border border-primary/20"
             >
-              <p className="text-muted-foreground mb-2">Currently available for</p>
-              <p className="font-display text-xl font-semibold text-gradient">
-                Freelance Projects & Internship Opportunities
+              <p className="text-muted-foreground mb-2">Open to discussions regarding</p>
+              <p className="font-display text-base font-semibold text-gradient leading-relaxed">
+                Embedded Firmware Development, IoT Telemetry Architecture, Edge AI Model Deployment, and Full Stack Product Engineering.
               </p>
             </motion.div>
           </motion.div>

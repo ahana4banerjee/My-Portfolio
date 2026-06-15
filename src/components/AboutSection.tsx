@@ -2,13 +2,8 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { 
-  Code2, Database, Globe, Palette, Server, Smartphone,
-  Briefcase, Calendar, MapPin,
-  Music, Camera, GamepadIcon, BookOpen, Plane,
-  Laptop,
-  Radio,
-  Pen,
-  Cpu
+  Code2, Database, Globe, Palette, Server,
+  Briefcase, Calendar, Cpu
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -116,12 +111,7 @@ const experiences = [
   }
 ];
 
-const interests = [
-  { name: "Tech", icon: Laptop },
-  { name: "Music", icon: Radio },
-  { name: "Reading", icon: BookOpen },
-  { name: "Writing", icon: Pen },
-];
+
 
 export function AboutSection() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -282,30 +272,7 @@ export function AboutSection() {
           </div>
         </motion.div>
 
-        {/* Interests */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-        >
-          <h3 className="font-display text-2xl font-semibold mb-8 text-center">Interests</h3>
-          <div className="flex flex-wrap justify-center gap-4 max-w-2xl mx-auto">
-            {interests.map((interest, index) => (
-              <motion.div
-                key={interest.name}
-                variants={itemVariants}
-                transition={{ delay: index * 0.05 }}
-              >
-                <Card className="glass hover:glow-sm hover:scale-105 transition-all duration-300 cursor-default">
-                  <CardContent className="p-4 flex flex-col items-center gap-2">
-                    <interest.icon className="h-6 w-6 text-primary" />
-                    <span className="text-sm font-medium">{interest.name}</span>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+
       </div>
     </section>
   );
