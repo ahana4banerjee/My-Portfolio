@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail, Heart } from "lucide-react";
 const quickLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
+  { label: "Journey", href: "#journey" },
   { label: "Projects", href: "#projects" },
   { label: "Resume", href: "#resume" },
   { label: "Contact", href: "#contact" },
@@ -39,7 +40,7 @@ export function Footer() {
               Ahana Banerjee
             </a>
             <p className="mt-3 text-muted-foreground text-sm max-w-xs">
-              Full Stack Developer passionate about creating beautiful, functional, and user-friendly applications.
+              Software + Embedded Systems Engineer building AI-powered cyber-physical systems.
             </p>
           </div>
 

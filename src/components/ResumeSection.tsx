@@ -9,10 +9,9 @@ export function ResumeSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const handleDownload = () => {
-    // Create a sample resume PDF download
-    // In production, replace with actual resume URL
+    // Download the resume PDF
     const link = document.createElement("a");
-    link.href = "public/assets/Full_Stack.pdf";
+    link.href = "/assets/Full_Stack.pdf";
     link.download = "Ahana_Banerjee_Resume.pdf";
     link.click();
   };
@@ -61,10 +60,10 @@ export function ResumeSection() {
                     Ahana Banerjee
                   </h3>
                   <p className="text-primary font-medium mb-4">
-                    Full Stack Developer | AI & IoT Engineer 
+                    Software + Embedded Systems Engineer | AI & IoT Builder
                   </p>
                   <p className="text-muted-foreground mb-6">
-                    Focused on building scalable web applications and AI-powered products.
+                    Focused on building intelligent cyber-physical systems, AI/ML models, and full-stack IoT solutions.
                   </p>
 
                   <div className="flex flex-col sm:flex-row gap-3">
@@ -78,7 +77,7 @@ export function ResumeSection() {
                     <Button
                       variant="outline"
                       className="rounded-full px-6 border-primary/50 hover:bg-primary/10 transition-all duration-300"
-                      onClick={() => window.open("public/assets/Full Stack Developer Resume.pdf", "_blank")}
+                      onClick={() => window.open("/assets/Full_Stack.pdf", "_blank")}
                     >
                       <Eye className="h-4 w-4 mr-2" />
                       View Online
@@ -90,16 +89,16 @@ export function ResumeSection() {
               {/* Quick Stats */}
               <div className="grid grid-cols-3 gap-4 mt-10 pt-8 border-t border-border/50">
                 <div className="text-center">
-                  <div className="font-display text-3xl font-bold text-gradient">3+</div>
-                  <div className="text-sm text-muted-foreground">Production-grade Apps</div>
+                  <div className="font-display text-3xl font-bold text-gradient">6+</div>
+                  <div className="text-sm text-muted-foreground">Core Projects</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-display text-3xl font-bold text-gradient">50+</div>
-                  <div className="text-sm text-muted-foreground">GitHub Commits</div>
+                  <div className="font-display text-3xl font-bold text-gradient">15+</div>
+                  <div className="text-sm text-muted-foreground">Open-Source PRs</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-display text-3xl font-bold text-gradient">50+</div>
-                  <div className="text-sm text-muted-foreground">DSA Problems Solved</div>
+                  <div className="font-display text-3xl font-bold text-gradient">4+</div>
+                  <div className="text-sm text-muted-foreground">Internships & Roles</div>
                 </div>
               </div>
             </CardContent>

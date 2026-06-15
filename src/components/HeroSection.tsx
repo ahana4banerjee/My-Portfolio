@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const roles = [
   "Software + Embedded Systems Engineer",
   "AI & IoT Engineer",
-  "Building Intelligent Backend Systems",
+  "Building Intelligent Cyber-Physical Systems",
 ];
 
 export function HeroSection() {

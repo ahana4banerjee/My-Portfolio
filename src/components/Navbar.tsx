@@ -6,6 +6,7 @@ import { ThemeToggle } from "./ThemeToggle";
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
+  { label: "Journey", href: "#journey" },
   { label: "Projects", href: "#projects" },
   { label: "Resume", href: "#resume" },
   { label: "Contact", href: "#contact" },
@@ -107,7 +108,7 @@ export function Navbar() {
       {/* Mobile Menu */}
       <div
         className={`md:hidden absolute top-full left-0 right-0 glass overflow-hidden transition-all duration-300 ${
-          isMobileMenuOpen ? "max-h-80 border-t border-border/50" : "max-h-0"
+          isMobileMenuOpen ? "max-h-96 border-t border-border/50" : "max-h-0"
         }`}
       >
         <div className="container mx-auto px-4 py-4 flex flex-col gap-2">
