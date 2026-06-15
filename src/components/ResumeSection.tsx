@@ -12,8 +12,8 @@ export function ResumeSection() {
     // Create a sample resume PDF download
     // In production, replace with actual resume URL
     const link = document.createElement("a");
-    link.href = "public/assets/Full Stack Developer Resume.pdf";
-    link.download = "Full Stack Developer Resume.pdf";
+    link.href = "public/assets/Full_Stack.pdf";
+    link.download = "Ahana_Banerjee_Resume.pdf";
     link.click();
   };
 
@@ -61,7 +61,7 @@ export function ResumeSection() {
                     Ahana Banerjee
                   </h3>
                   <p className="text-primary font-medium mb-4">
-                    Full Stack Developer | Software Engineer
+                    Full Stack Developer | AI & IoT Engineer 
                   </p>
                   <p className="text-muted-foreground mb-6">
                     Focused on building scalable web applications and AI-powered products.
