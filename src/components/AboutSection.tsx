@@ -142,14 +142,8 @@ export function AboutSection() {
             About <span className="text-gradient">Me</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-  I’m a passionate <Highlight >software developer</Highlight> who loves building real, 
-  <Highlight> user-centric applications</Highlight> that actually solve problems. 
-  I have hands-on experience with the <Highlight>MERN stack</Highlight>, 
-  <Highlight> Python</Highlight>, and I’m actively exploring 
-  <Highlight> AI</Highlight> and <Highlight>intelligent systems</Highlight>.  
-  For me, development is not just about writing code — it’s about turning ideas into 
-  <Highlight> smooth, meaningful digital experiences</Highlight> that people genuinely enjoy using.
-</p>
+            As an <Highlight>Electronics and Communication Engineering (ECE)</Highlight> student, my journey began with the physical layer of technology—signals, circuits, and microcontrollers. This hardware foundation naturally evolved into a focus on <Highlight>IoT and Embedded Systems</Highlight>, where software directly controls the physical world. To create complete, end-to-end solutions, I learned <Highlight>Full Stack Development</Highlight>, enabling me to connect edge nodes to secure backend services and intuitive web dashboards. Driven by a vision of adaptive hardware, I am actively integrating <Highlight>AI/ML and edge computing</Highlight> into my designs. Today, I bridge the divide between hardware, cloud software, and intelligence, aiming to build <Highlight>intelligent cyber-physical systems</Highlight> that automate and optimize complex processes.
+          </p>
 
         </motion.div>
 
