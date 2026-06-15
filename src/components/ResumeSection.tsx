@@ -9,7 +9,6 @@ export function ResumeSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const handleDownload = () => {
-    // Download the resume PDF
     const link = document.createElement("a");
     link.href = "/assets/Full_Stack.pdf";
     link.download = "Ahana_Banerjee_Resume.pdf";

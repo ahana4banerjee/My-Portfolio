@@ -9,7 +9,6 @@ I, Ahana Banerjee, build systems where software directly interacts with the phys
 ## 2. Live Website
 
 The deployed version of my portfolio is live and accessible at:
-* **Live Demo:** [ahanabanerjeeportfolio.vercel.app](https://ahanabanerjeeportfolio.vercel.app/)
 * **Portfolio URL:** `https://ahanabanerjeeportfolio.vercel.app/`
 
 ---

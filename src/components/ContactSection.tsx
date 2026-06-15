@@ -35,17 +35,16 @@ export function ContactSection() {
     setIsSubmitting(true);
 
     try {
-      // Replace these with your EmailJS credentials
       await emailjs.send(
-        "service_vcpasz6", // Replace with your EmailJS service ID
-        "template_8fvwad8", // Replace with your EmailJS template ID
+        "service_vcpasz6", 
+        "template_8fvwad8", 
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_email: "banerjeeahana4@gmail.com", // Replace with your email
+          to_email: "banerjeeahana4@gmail.com", 
         },
-        "eBjqd-45q57bveL3O" // Replace with your EmailJS public key
+        "eBjqd-45q57bveL3O"   
       );
 
       toast({
